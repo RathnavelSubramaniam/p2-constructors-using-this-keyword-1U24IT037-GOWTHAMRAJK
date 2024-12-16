@@ -20,7 +20,7 @@ class Product
         count++;
     }
 
-    double discount(double price, double discountPercentage) 
+    double Discount(double price, double discountPercentage) 
     {
         return ((100 - discountPercentage) / 100) * price;
     }
@@ -44,7 +44,7 @@ public class Practical2 {
         product2.displayProductInfo();
         product3.displayProductInfo();
 
-        double discountedPrice = calcDiscount.discount(product1.price, 10);
+        double discountedPrice = calcDiscount.Discount(product1.price, 10);
         System.out.println("Discounted Price : " + discountedPrice);
         System.out.println(Product.count);
     }
