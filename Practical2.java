@@ -5,7 +5,7 @@ class Product
     String productName;
     double price;
 
-    static int count = 0;
+    static int count;
 
     Product() 
     {
@@ -38,12 +38,13 @@ public class Practical2 {
         Product product1 = new Product(101, "Laptop", 999.99);
         Product product2 = new Product(202, "Smart Phone", 499.95);
         Product product3 = new Product(303, "Tablet", 299.50);
-
+        Product calcDiscount = new Product();
+    
         product1.displayProductInfo();
         product2.displayProductInfo();
         product3.displayProductInfo();
 
-        double discountedPrice = product1.discount(product1.price, 10);
+        double discountedPrice = calcDiscount.discount(product1.price, 10);
         System.out.println("Discounted Price : " + discountedPrice);
 
         System.out.println(Product.count);
